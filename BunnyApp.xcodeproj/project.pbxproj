@@ -11,7 +11,6 @@
 		417DDEA62C84F198009F8365 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDEA52C84F198009F8365 /* ContentView.swift */; };
 		417DDEA82C84F199009F8365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417DDEA72C84F199009F8365 /* Assets.xcassets */; };
 		417DDEAB2C84F199009F8365 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417DDEAA2C84F199009F8365 /* Preview Assets.xcassets */; };
-		417DDECE2C84F839009F8365 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 417DDECD2C84F839009F8365 /* GoogleService-Info (1).plist */; };
 		417DDED12C84F8EA009F8365 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDED02C84F8EA009F8365 /* FirebaseAnalytics */; };
 		417DDED32C84F8EA009F8365 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDED22C84F8EA009F8365 /* FirebaseAnalyticsOnDeviceConversion */; };
 		417DDED52C84F8EA009F8365 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDED42C84F8EA009F8365 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -35,6 +34,25 @@
 		417DDEF92C84F8EA009F8365 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDEF82C84F8EA009F8365 /* FirebaseStorage */; };
 		417DDEFB2C84F8EA009F8365 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDEFA2C84F8EA009F8365 /* FirebaseStorageCombine-Community */; };
 		417DDEFD2C84F8EA009F8365 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 417DDEFC2C84F8EA009F8365 /* FirebaseVertexAI-Preview */; };
+		417DDF032C84FACB009F8365 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF022C84FACB009F8365 /* User.swift */; };
+		417DDF052C84FAD8009F8365 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF042C84FAD8009F8365 /* ToDoItem.swift */; };
+		417DDF072C84FAEF009F8365 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF062C84FAEF009F8365 /* ContentViewModel.swift */; };
+		417DDF092C84FAF9009F8365 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF082C84FAF9009F8365 /* ProfileViewModel.swift */; };
+		417DDF0B2C84FB10009F8365 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF0A2C84FB10009F8365 /* ListViewModel.swift */; };
+		417DDF0E2C84FB24009F8365 /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF0D2C84FB24009F8365 /* NewItemViewModel.swift */; };
+		417DDF102C84FB33009F8365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF0F2C84FB33009F8365 /* LoginViewModel.swift */; };
+		417DDF122C84FB3F009F8365 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF112C84FB3F009F8365 /* RegisterViewModel.swift */; };
+		417DDF142C84FB49009F8365 /* SingleItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF132C84FB49009F8365 /* SingleItemViewModel.swift */; };
+		417DDF162C84FB5A009F8365 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF152C84FB5A009F8365 /* HeaderView.swift */; };
+		417DDF182C84FB61009F8365 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF172C84FB61009F8365 /* ProfileView.swift */; };
+		417DDF1A2C84FB6C009F8365 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF192C84FB6C009F8365 /* ListView.swift */; };
+		417DDF1C2C84FB76009F8365 /* SingleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF1B2C84FB76009F8365 /* SingleItemView.swift */; };
+		417DDF1E2C84FB83009F8365 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF1D2C84FB83009F8365 /* TLButton.swift */; };
+		417DDF202C84FB8C009F8365 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF1F2C84FB8C009F8365 /* LoginView.swift */; };
+		417DDF222C84FB95009F8365 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF212C84FB95009F8365 /* RegisterView.swift */; };
+		417DDF242C84FBAC009F8365 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF232C84FBAC009F8365 /* NewItemView.swift */; };
+		417DDF262C84FC82009F8365 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF252C84FC82009F8365 /* Extensions.swift */; };
+		417DDF282C8502DA009F8365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417DDF272C8502DA009F8365 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +61,25 @@
 		417DDEA52C84F198009F8365 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		417DDEA72C84F199009F8365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417DDEAA2C84F199009F8365 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		417DDECD2C84F839009F8365 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		417DDF022C84FACB009F8365 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		417DDF042C84FAD8009F8365 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		417DDF062C84FAEF009F8365 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		417DDF082C84FAF9009F8365 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		417DDF0A2C84FB10009F8365 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		417DDF0D2C84FB24009F8365 /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
+		417DDF0F2C84FB33009F8365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		417DDF112C84FB3F009F8365 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		417DDF132C84FB49009F8365 /* SingleItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemViewModel.swift; sourceTree = "<group>"; };
+		417DDF152C84FB5A009F8365 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		417DDF172C84FB61009F8365 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		417DDF192C84FB6C009F8365 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		417DDF1B2C84FB76009F8365 /* SingleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemView.swift; sourceTree = "<group>"; };
+		417DDF1D2C84FB83009F8365 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		417DDF1F2C84FB8C009F8365 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		417DDF212C84FB95009F8365 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		417DDF232C84FBAC009F8365 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		417DDF252C84FC82009F8365 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		417DDF272C8502DA009F8365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +121,7 @@
 			children = (
 				417DDEA22C84F198009F8365 /* BunnyApp */,
 				417DDEA12C84F198009F8365 /* Products */,
+				417DDF292C88A139009F8365 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +136,10 @@
 		417DDEA22C84F198009F8365 /* BunnyApp */ = {
 			isa = PBXGroup;
 			children = (
-				417DDEA32C84F198009F8365 /* BunnyAppApp.swift */,
-				417DDEA52C84F198009F8365 /* ContentView.swift */,
-				417DDECD2C84F839009F8365 /* GoogleService-Info (1).plist */,
-				417DDEA72C84F199009F8365 /* Assets.xcassets */,
+				417DDF012C84FA67009F8365 /* ViewModels */,
+				417DDF002C84FA61009F8365 /* Views */,
+				417DDEFF2C84FA5C009F8365 /* Models */,
+				417DDEFE2C84FA38009F8365 /* Other */,
 				417DDEA92C84F199009F8365 /* Preview Content */,
 			);
 			path = BunnyApp;
@@ -114,6 +151,63 @@
 				417DDEAA2C84F199009F8365 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		417DDEFE2C84FA38009F8365 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				417DDEA32C84F198009F8365 /* BunnyAppApp.swift */,
+				417DDEA72C84F199009F8365 /* Assets.xcassets */,
+				417DDF272C8502DA009F8365 /* GoogleService-Info.plist */,
+				417DDF252C84FC82009F8365 /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		417DDEFF2C84FA5C009F8365 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				417DDF022C84FACB009F8365 /* User.swift */,
+				417DDF042C84FAD8009F8365 /* ToDoItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		417DDF002C84FA61009F8365 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				417DDEA52C84F198009F8365 /* ContentView.swift */,
+				417DDF152C84FB5A009F8365 /* HeaderView.swift */,
+				417DDF172C84FB61009F8365 /* ProfileView.swift */,
+				417DDF192C84FB6C009F8365 /* ListView.swift */,
+				417DDF1B2C84FB76009F8365 /* SingleItemView.swift */,
+				417DDF1D2C84FB83009F8365 /* TLButton.swift */,
+				417DDF1F2C84FB8C009F8365 /* LoginView.swift */,
+				417DDF212C84FB95009F8365 /* RegisterView.swift */,
+				417DDF232C84FBAC009F8365 /* NewItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		417DDF012C84FA67009F8365 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				417DDF062C84FAEF009F8365 /* ContentViewModel.swift */,
+				417DDF082C84FAF9009F8365 /* ProfileViewModel.swift */,
+				417DDF0A2C84FB10009F8365 /* ListViewModel.swift */,
+				417DDF0D2C84FB24009F8365 /* NewItemViewModel.swift */,
+				417DDF0F2C84FB33009F8365 /* LoginViewModel.swift */,
+				417DDF112C84FB3F009F8365 /* RegisterViewModel.swift */,
+				417DDF132C84FB49009F8365 /* SingleItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		417DDF292C88A139009F8365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				417DDEAB2C84F199009F8365 /* Preview Assets.xcassets in Resources */,
-				417DDECE2C84F839009F8365 /* GoogleService-Info (1).plist in Resources */,
+				417DDF282C8502DA009F8365 /* GoogleService-Info.plist in Resources */,
 				417DDEA82C84F199009F8365 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +309,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417DDF092C84FAF9009F8365 /* ProfileViewModel.swift in Sources */,
+				417DDF182C84FB61009F8365 /* ProfileView.swift in Sources */,
+				417DDF142C84FB49009F8365 /* SingleItemViewModel.swift in Sources */,
+				417DDF122C84FB3F009F8365 /* RegisterViewModel.swift in Sources */,
 				417DDEA62C84F198009F8365 /* ContentView.swift in Sources */,
+				417DDF1E2C84FB83009F8365 /* TLButton.swift in Sources */,
+				417DDF242C84FBAC009F8365 /* NewItemView.swift in Sources */,
+				417DDF0B2C84FB10009F8365 /* ListViewModel.swift in Sources */,
 				417DDEA42C84F198009F8365 /* BunnyAppApp.swift in Sources */,
+				417DDF052C84FAD8009F8365 /* ToDoItem.swift in Sources */,
+				417DDF222C84FB95009F8365 /* RegisterView.swift in Sources */,
+				417DDF162C84FB5A009F8365 /* HeaderView.swift in Sources */,
+				417DDF202C84FB8C009F8365 /* LoginView.swift in Sources */,
+				417DDF1C2C84FB76009F8365 /* SingleItemView.swift in Sources */,
+				417DDF032C84FACB009F8365 /* User.swift in Sources */,
+				417DDF262C84FC82009F8365 /* Extensions.swift in Sources */,
+				417DDF1A2C84FB6C009F8365 /* ListView.swift in Sources */,
+				417DDF0E2C84FB24009F8365 /* NewItemViewModel.swift in Sources */,
+				417DDF072C84FAEF009F8365 /* ContentViewModel.swift in Sources */,
+				417DDF102C84FB33009F8365 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +465,11 @@
 				DEVELOPMENT_TEAM = 6X8XC32WSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bunny App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,11 +494,11 @@
 				DEVELOPMENT_TEAM = 6X8XC32WSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bunny App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
