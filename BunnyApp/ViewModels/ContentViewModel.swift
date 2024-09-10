@@ -17,6 +17,7 @@ class ContentViewModel: ObservableObject{
     
     init(){
         
+        //handy dandy listener here for logout it helps
         self.handler = Auth.auth().addStateDidChangeListener{[weak self] _, user in
             DispatchQueue.main.async{
                 self?.currentUserId = user?.uid ?? ""
