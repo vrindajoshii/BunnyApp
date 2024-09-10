@@ -17,10 +17,11 @@ struct LoginView: View {
             
             VStack{
                 //Header
-                HeaderView(title:"To Do List",
-                           subtitle:"Get things done",
+                HeaderView(title:"BusyBunny",
+                           subtitle:"Hop into productivity",
                            angle: 10,
-                           background:.blue)
+                           background:Color("LoginRect")
+                        )
              
                 //Login form
                 Form{
@@ -43,7 +44,7 @@ struct LoginView: View {
                     
                     
                     //Custom button is a separate view now
-                    TLButton(title: "Log In", background: .blue) {
+                    TLButton(title: "Log In", background: .mint) {
                         //attempt login
                         viewModel.login()
                     }
@@ -56,10 +57,12 @@ struct LoginView: View {
                 
                 VStack{
                     Text("New around here?")
-                    
+                        .foregroundColor(.mint)
                     //Show registration link
                     NavigationLink("Create an Account",
                                    destination: RegisterView())
+                    .foregroundColor(.mint)
+
                 }
                 .padding(.bottom, 50)
                 

@@ -17,9 +17,9 @@ struct RegisterView: View {
         VStack{
             //Header
             HeaderView(title:"Register",
-                       subtitle:"Start organising todos",
+                       subtitle:"Let's get started!",
                        angle: -10,
-                       background:.orange)
+                       background:Color("RegRect"))
             
             Form{
                 TextField("Full Name", text: $viewModel.name)
