@@ -13,7 +13,7 @@ class ListViewModel: ObservableObject{
     
     @Published var showingNewItemView = false //when first launches dont want it shown right away
     
-    private let userId : String
+    let userId : String
     
     init(userId: String){
         self.userId = userId
@@ -30,5 +30,7 @@ class ListViewModel: ObservableObject{
             .document(id)
             .delete()
     }
+    
+  
     
 }

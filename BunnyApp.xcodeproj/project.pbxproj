@@ -54,6 +54,8 @@
 		417DDF262C84FC82009F8365 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF252C84FC82009F8365 /* Extensions.swift */; };
 		417DDF282C8502DA009F8365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417DDF272C8502DA009F8365 /* GoogleService-Info.plist */; };
 		417DDF2B2C8F5998009F8365 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417DDF2A2C8F5998009F8365 /* Launch Screen.storyboard */; };
+		417DDF2F2C922C3A009F8365 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF2E2C922C39009F8365 /* EditItemView.swift */; };
+		417DDF312C922CB3009F8365 /* EditItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DDF302C922CB3009F8365 /* EditItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		417DDF252C84FC82009F8365 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		417DDF272C8502DA009F8365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		417DDF2A2C8F5998009F8365 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		417DDF2E2C922C39009F8365 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		417DDF302C922CB3009F8365 /* EditItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 				417DDF1F2C84FB8C009F8365 /* LoginView.swift */,
 				417DDF212C84FB95009F8365 /* RegisterView.swift */,
 				417DDF232C84FBAC009F8365 /* NewItemView.swift */,
+				417DDF2E2C922C39009F8365 /* EditItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				417DDF0F2C84FB33009F8365 /* LoginViewModel.swift */,
 				417DDF112C84FB3F009F8365 /* RegisterViewModel.swift */,
 				417DDF132C84FB49009F8365 /* SingleItemViewModel.swift */,
+				417DDF302C922CB3009F8365 /* EditItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 				417DDF092C84FAF9009F8365 /* ProfileViewModel.swift in Sources */,
 				417DDF182C84FB61009F8365 /* ProfileView.swift in Sources */,
 				417DDF142C84FB49009F8365 /* SingleItemViewModel.swift in Sources */,
+				417DDF312C922CB3009F8365 /* EditItemViewModel.swift in Sources */,
 				417DDF122C84FB3F009F8365 /* RegisterViewModel.swift in Sources */,
 				417DDEA62C84F198009F8365 /* ContentView.swift in Sources */,
 				417DDF1E2C84FB83009F8365 /* TLButton.swift in Sources */,
@@ -333,6 +340,7 @@
 				417DDF0E2C84FB24009F8365 /* NewItemViewModel.swift in Sources */,
 				417DDF072C84FAEF009F8365 /* ContentViewModel.swift in Sources */,
 				417DDF102C84FB33009F8365 /* LoginViewModel.swift in Sources */,
+				417DDF2F2C922C3A009F8365 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
