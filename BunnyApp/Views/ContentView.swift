@@ -29,6 +29,10 @@ struct ContentView: View {
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person.circle")
                 }
+            CalendarView()
+                .tabItem { Label("Calendar",
+                    systemImage: "calendar")
+                }
         }
     }
 }
