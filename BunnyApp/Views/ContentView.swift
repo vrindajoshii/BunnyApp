@@ -29,7 +29,7 @@ struct ContentView: View {
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person.circle")
                 }
-            CalendarView()
+            CalendarView(userId: viewModel.currentUserId)
                 .tabItem { Label("Calendar",
                     systemImage: "calendar")
                 }
