@@ -1,10 +1,3 @@
-//
-//  SingleItemView.swift
-//  TutApp
-//
-//  Created by Vrinda Joshi on 07/08/2024.
-//
-
 import SwiftUI
 
 struct SingleItemView: View {
@@ -12,7 +5,7 @@ struct SingleItemView: View {
     @State private var isEditing = false
     let item: ToDoItem
     let userId: String
-    
+
     var body: some View {
         HStack {
             // Toggle done button
@@ -22,20 +15,30 @@ struct SingleItemView: View {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
                     .foregroundColor(Color.blue)
             }
-            .buttonStyle(PlainButtonStyle()) // Ensures it only registers when the circle is tapped
-            
+            .buttonStyle(PlainButtonStyle())
+
             // Content
             VStack(alignment: .leading) {
                 Text(item.title)
                     .font(.body)
-                Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
-                    .font(.footnote)
-                    .foregroundColor(Color(.secondaryLabel))
+
+                HStack {
+                    // Display the due date
+                    Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+                        .font(.footnote)
+                        .foregroundColor(Color(.secondaryLabel))
+
+                    // Display "Overdue" if the due date has passed
+                    if isOverdue(dueDate: item.dueDate) && !item.isDone {
+                        Text("Overdue")
+                            .font(.footnote)
+                            .foregroundColor(.red)
+                            .bold()
+                    }
+                }
             }
-            .contentShape(Rectangle()) // Prevent taps from triggering unwanted actions
-            
             Spacer()
-            
+
             // Edit button
             Button {
                 isEditing = true
@@ -43,20 +46,27 @@ struct SingleItemView: View {
                 Image(systemName: "pencil")
                     .foregroundColor(.green)
             }
-            .buttonStyle(PlainButtonStyle()) // Ensures only the pencil icon triggers this
+            .buttonStyle(PlainButtonStyle())
             .sheet(isPresented: $isEditing) {
                 EditItemView(isPresented: $isEditing, title: item.title, dueDate: Date(timeIntervalSince1970: item.dueDate), item: item, userId: userId)
             }
         }
-        .contentShape(Rectangle()) // Ensure no unexpected interaction on the entire row
+        .contentShape(Rectangle())
+    }
+
+    /// Checks if the due date has passed
+    private func isOverdue(dueDate: TimeInterval) -> Bool {
+        let currentDate = Date()
+        let dueDateAsDate = Date(timeIntervalSince1970: dueDate)
+        return dueDateAsDate < currentDate
     }
 }
 
 #Preview {
     SingleItemView(item: .init(id: "123",
                               title: "Get milk",
-                               dueDate: Date().timeIntervalSince1970,
-                               createdDate: Date().timeIntervalSince1970,
-                              isDone: true),
+                              dueDate: Date().addingTimeInterval(-3600).timeIntervalSince1970, // 1 hour in the past
+                              createdDate: Date().timeIntervalSince1970,
+                              isDone: false),
                    userId: "EwYahTfkkKTjxyBbW55UhNPUIdJ3")
 }
