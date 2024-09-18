@@ -7,6 +7,8 @@
 import FirebaseAuth
 import FirebaseFirestore
 import Foundation
+import UserNotifications
+
 class NewItemViewModel: ObservableObject{
     
     @Published var title = ""
@@ -44,9 +46,15 @@ class NewItemViewModel: ObservableObject{
             .document(uID)
             .collection("todos")
             .document(newID) //new model id
-            .setData(newItem.asDictionary()) //dictionary
-        
-        
+            .setData(newItem.asDictionary()) { error in
+                if let error = error {
+                    print("Error saving item: \(error)")
+                } else {
+                    print("Successfully saved item: \(newItem)")
+                    // Schedule a notification 30 minutes before the due date
+                    self.scheduleTaskNotification(task: newItem)
+                }
+            }
                 
     }
     
@@ -62,5 +70,34 @@ class NewItemViewModel: ObservableObject{
         return true
     }
     
+    func scheduleTaskNotification(task: ToDoItem) {
+            let content = UNMutableNotificationContent()
+            content.title = "Task Reminder"
+            content.body = "Your task \"\(task.title)\" is due in 30 minutes."
+            content.sound = .default
+
+            // Calculate the time interval (30 minutes before due date)
+            let triggerDate = task.dueDate - 1800 // 30 minutes = 1800 seconds
+            
+            // If the trigger time is in the past, don't schedule the notification
+            if triggerDate <= Date().timeIntervalSince1970 {
+                print("Notification trigger time is in the past. No notification will be scheduled.")
+                return
+            }
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: triggerDate - Date().timeIntervalSince1970, repeats: false)
+
+            // Create a unique identifier for the notification using the task's ID
+            let request = UNNotificationRequest(identifier: task.id ?? UUID().uuidString, content: content, trigger: trigger)
+
+            // Add the notification request to the notification center
+            UNUserNotificationCenter.current().add(request) { error in
+                if let error = error {
+                    print("Error scheduling notification: \(error.localizedDescription)")
+                } else {
+                    print("Notification scheduled for task: \(task.title)")
+                }
+            }
+        }
 }
 
