@@ -7,6 +7,7 @@
 import Firebase
 import FirebaseFirestore
 import SwiftUI
+
 struct ItemsView: View {
     @StateObject var viewModel: ListViewModel
     @FirestoreQuery var items: [ToDoItem]
@@ -23,7 +24,7 @@ struct ItemsView: View {
                     SingleItemView(item: item, userId: viewModel.userId) // Pass userId
                         .swipeActions {
                             Button("Delete") {
-                                viewModel.delete(id: item.id)
+                                viewModel.delete(item: item)
                             }
                             .tint(.red)
                         }
